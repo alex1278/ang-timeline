@@ -1,0 +1,285 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: ANG Timeline\n"
+"POT-Creation-Date: 2016-05-28 23:52+0300\n"
+"PO-Revision-Date: 2016-05-28 23:53+0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: ang-timeline.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: en\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ang-timeline.php:98
+msgctxt "Taxonomy General Name"
+msgid "Events"
+msgstr "Events"
+
+#: ang-timeline.php:99
+msgctxt "Taxonomy Singular Name"
+msgid "Event"
+msgstr "Event"
+
+#: ang-timeline.php:100
+msgid "Events"
+msgstr "Events"
+
+#: ang-timeline.php:101
+msgid "All Events"
+msgstr "All Events"
+
+#: ang-timeline.php:102
+msgid "Parent Event"
+msgstr "Parent Event"
+
+#: ang-timeline.php:103
+msgid "Parent Event:"
+msgstr "Parent Event:"
+
+#: ang-timeline.php:104
+msgid "New Event Name"
+msgstr "New Event Name"
+
+#: ang-timeline.php:105
+msgid "Add New Event"
+msgstr "Add New Event"
+
+#: ang-timeline.php:106
+msgid "Edit Event"
+msgstr "Edit Event"
+
+#: ang-timeline.php:107
+msgid "Update Event"
+msgstr "Update Event"
+
+#: ang-timeline.php:108
+msgid "View Event"
+msgstr "View Event"
+
+#: ang-timeline.php:109
+msgid "Separate Events with commas"
+msgstr "Separate Events with commas"
+
+#: ang-timeline.php:110
+msgid "Add or remove Events "
+msgstr "Add or remove Events "
+
+#: ang-timeline.php:111
+msgid "Choose from the most used"
+msgstr "Choose from the most used"
+
+#: ang-timeline.php:112
+msgid "Popular Events"
+msgstr "Popular Events"
+
+#: ang-timeline.php:113
+msgid "Search Events"
+msgstr "Search Events"
+
+#: ang-timeline.php:114
+msgid "Not Found"
+msgstr "Not Found"
+
+#: ang-timeline.php:115
+msgid "Events list"
+msgstr "Events list"
+
+#: ang-timeline.php:116
+msgid "Events list navigation"
+msgstr "Events list navigation"
+
+#: ang-timeline.php:145
+msgctxt "Post Type General Name"
+msgid "Timelines"
+msgstr "Timelines"
+
+#: ang-timeline.php:146
+msgctxt "Post Type Singular Name"
+msgid "Timeline"
+msgstr "Timeline"
+
+#: ang-timeline.php:147 ang-timeline.php:148 ang-timeline.php:153
+#: ang-timeline.php:165 widgets/timeline-wgt.php:29
+msgid "Timeline"
+msgstr "Timeline"
+
+#: ang-timeline.php:149
+msgid "Parent Timeline:"
+msgstr "Parent Timeline:"
+
+#: ang-timeline.php:150
+msgid "All Timelines"
+msgstr "All Timelines"
+
+#: ang-timeline.php:151
+msgid "Add New Timeline"
+msgstr "Add New Timeline"
+
+#: ang-timeline.php:152
+msgid "Add New"
+msgstr "Add New"
+
+#: ang-timeline.php:154
+msgid "Edit Timeline"
+msgstr "Edit Timeline"
+
+#: ang-timeline.php:155
+msgid "Update Timeline"
+msgstr "Update Timeline"
+
+#: ang-timeline.php:156
+msgid "View Timeline"
+msgstr "View Timeline"
+
+#: ang-timeline.php:157
+msgid "Search Timeline"
+msgstr "Search Timeline"
+
+#: ang-timeline.php:158
+msgid "Timeline Not found"
+msgstr "Timeline Not found"
+
+#: ang-timeline.php:159
+msgid "Timeline Not found in Trash"
+msgstr "Timeline Not found in Trash"
+
+#: ang-timeline.php:160
+msgid "Timelines list"
+msgstr "Timelines list"
+
+#: ang-timeline.php:161
+msgid "Timelines list navigation"
+msgstr "Timelines list navigation"
+
+#: ang-timeline.php:162
+msgid "Filter Timelines list"
+msgstr "Filter Timelines list"
+
+#: ang-timeline.php:166
+msgid "Every post will become to slide show or slider"
+msgstr "Every post will become to slide show or slider"
+
+#: ang-timeline.php:207
+msgid "Timeline value: "
+msgstr "Timeline value: "
+
+#: ang-timeline.php:280 ang-timeline.php:295
+msgid "Image "
+msgstr "Image "
+
+#. Plugin Name of the plugin/theme
+#: widgets/timeline-wgt.php:20
+msgid "ANG Timeline"
+msgstr "ANG Timeline"
+
+#: widgets/timeline-wgt.php:21
+msgid "Displays posts in Timeline mode"
+msgstr "Displays posts in Timeline mode"
+
+#: widgets/timeline-wgt.php:32
+msgid "Title:"
+msgstr "Title:"
+
+#: widgets/timeline-wgt.php:46
+msgid "Description:"
+msgstr "Description:"
+
+#: widgets/timeline-wgt.php:58
+msgid "Extra class:"
+msgstr "Extra class:"
+
+#: widgets/timeline-wgt.php:73
+msgid "Select post type:"
+msgstr "Select post type:"
+
+#: widgets/timeline-wgt.php:115
+msgid "Timeline tax (if timeline type selected):"
+msgstr "Timeline tax (if timeline type selected):"
+
+#: widgets/timeline-wgt.php:132
+msgid "Post Category (if post type selected):"
+msgstr "Post Category (if post type selected):"
+
+#: widgets/timeline-wgt.php:178
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: widgets/timeline-wgt.php:181
+msgid "Prefered time "
+msgstr "Prefered time "
+
+#: widgets/timeline-wgt.php:181
+msgid "format"
+msgstr "format"
+
+#: widgets/timeline-wgt.php:199
+msgid "Number of posts:"
+msgstr "Number of posts:"
+
+#: widgets/timeline-wgt.php:214
+msgid "Words per each post:"
+msgstr "Words per each post:"
+
+#: widgets/timeline-wgt.php:228
+msgid "Image Size:"
+msgstr "Image Size:"
+
+#: widgets/timeline-wgt.php:230
+msgid "--Default (100 X 100)--"
+msgstr "--Default (100 X 100)--"
+
+#: widgets/timeline-wgt.php:265
+msgid "Order type format:"
+msgstr "Order type format:"
+
+#: widgets/timeline-wgt.php:281 widgets/timeline-wgt.php:287
+msgid "ASC"
+msgstr "ASC"
+
+#: widgets/timeline-wgt.php:284
+msgid "Posts order type:"
+msgstr "Posts order type:"
+
+#: widgets/timeline-wgt.php:288
+msgid "DESC"
+msgstr "DESC"
+
+#: widgets/timeline-wgt.php:296
+msgid "Hide the post title"
+msgstr "Hide the post title"
+
+#: widgets/timeline-wgt.php:304
+msgid "Hide the featured image"
+msgstr "Hide the featured image"
+
+#: widgets/timeline-wgt.php:312
+msgid "Hide the post link"
+msgstr "Hide the post link"
+
+#: widgets/timeline-wgt.php:320
+msgid "Hide the date"
+msgstr "Hide the date"
+
+#. Plugin URI of the plugin/theme
+msgid "http://repository.torbara.com/wordpress/wp-org-plugins/ang-timeline"
+msgstr "http://repository.torbara.com/wordpress/wp-org-plugins/ang-timeline"
+
+#. Description of the plugin/theme
+msgid "Timeline tree for your posts and CPT"
+msgstr "Timeline tree for your posts and CPT"
+
+#. Author of the plugin/theme
+msgid "Aleksandr Glovatskyy"
+msgstr "Aleksandr Glovatskyy"
+
+#. Author URI of the plugin/theme
+msgid "http://torbara.com"
+msgstr "http://torbara.com"
