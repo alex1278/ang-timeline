@@ -7,11 +7,18 @@ Tested up to: 4.5.2
 Requires at least: 3.5
 License: GPLv2 or later
 
-A complete timeline plugin for creative folks
+A complete timeline plugin for creative folks.
 
 == Description ==
 
-This plugin adds the 'timeline' custom post type to your WordPress blog. By default, the plugin will append timeline meta information (timeline value) to the timeline post. It will prepend text element(date) to timeline posts. Timeline widget allows you select any registered image size to show in timeline post.
+This plugin adds the 'timeline' custom post type to your WordPress blog. By default, the plugin will append timeline meta information (timeline value) to the timeline post. 
+It will prepend text element(date) to timeline posts. Timeline widget allows you select any registered image size to show in timeline post.
+
+Working demos are available here:
+
+**[LIVE DEMO Esta](http://w-esta.torbara.com/?page_id=7)** 
+
+**[LIVE DEMO Endeavor](http://w-endeavor.torbara.com/blog/)**
 
 = Features =
 
@@ -24,28 +31,19 @@ This plugin adds the 'timeline' custom post type to your WordPress blog. By defa
 
 = From your WordPress dashboard =
 
-    Visit 'Plugins > Add New'
-    Search for 'ANG Timeline'
-    Activate 'ANG Timeline' from your Plugins page.
-    Visit 'Timeline > Add New' and create some posts. (You can always delete these later.)
-    Go to 'Appearance' > 'Widgets' and find 'ANG Timeline widget'. Now you can display your Timeline posts.
+1. Visit 'Plugins > Add New'
+2. Search for 'ANG Timeline'
+3. Activate 'ANG Timeline' from your Plugins page.
+4. Visit 'Timeline > Add New' and create some posts. (You can always delete these later.)
+5. Go to 'Appearance' > 'Widgets' and find 'ANG Timeline widget'. Now you can display your Timeline posts.
 
 = From WordPress.org =
 
-    Download 'ANG Timeline'.
-    Upload the 'ANG Timeline' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
-    Activate ;ANG Timeline; from your Plugins page. (You'll be greeted with a Welcome page.)
-    Visit 'Timeline > Add New' and create some posts. (You can always delete these later.)
-    Go to 'Appearance' > 'Widgets' and find 'ANG Timeline widget'. Now you can display your Timeline posts.
-
-
-== Changelog ==
-
-= 1.3.0 =
-* OPP structure
-
-= 1.0.0 =
-* Initial Release
+1. Download 'ANG Timeline'.
+2. Upload the 'ANG Timeline' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
+3. Activate ;ANG Timeline; from your Plugins page. (You'll be greeted with a Welcome page.)
+4. Visit 'Timeline > Add New' and create some posts. (You can always delete these later.)
+5. Go to 'Appearance' > 'Widgets' and find 'ANG Timeline widget'. Now you can display your Timeline posts.
 
 == Frequently Asked Questions ==
 
@@ -71,7 +69,18 @@ Yes you can! (http://torbara.com/ )
 2. ANG Timeline widget.
 3. ANG Timeline page.
 
+== Changelog ==
+
+= 1.3.0 =
+
+* OPP structure
+
+= 1.0.0 =
+
+* Initial Release
+
 == Upgrade Notice ==
 
 = 1.3.0 =
-New plugin structure. Major changes in the plugin core. OOP base.
+
+* New plugin structure. Major changes in the plugin core. OOP base.
