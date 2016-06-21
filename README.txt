@@ -74,4 +74,4 @@ Yes you can! (http://torbara.com/ )
 == Upgrade Notice ==
 
 = 1.3.0 =
-New plugin structure. OOP base.
+New plugin structure. Major changes in the plugin core. OOP base.

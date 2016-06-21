@@ -8,7 +8,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       ANG Timeline
- * Plugin URI:        https://github.com/alex1278/ang-timelime
+ * Plugin URI:        https://github.com/alex1278/ang-timeline
  * Description:       Timeline tree for Wordpress posts and CPT.
  * Tags:              timeline, custom post type, custom taxonomy, timeline type, images, custom fields
  * Version:           1.3.0
