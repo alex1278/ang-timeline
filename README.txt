@@ -20,6 +20,10 @@ Working demos are available here:
 
 **[LIVE DEMO Endeavor](http://w-endeavor.torbara.com/blog/)**
 
+### Github
+
+- [GitHub Repository](https://github.com/alex1278/ang-timeline)
+
 = Features =
 
 * Custom post type 'timeline';
