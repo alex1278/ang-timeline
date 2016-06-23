@@ -74,7 +74,7 @@ class Ang_Timeline_Public {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/ang-timeline-public.css', array(), $this->version, 'all' );
-		wp_enqueue_style( 'warp-css-uikit', plugin_dir_url( __FILE__ ) . 'css/uikit.warp.min.css', array(), $this->version, 'all' );
+		//wp_enqueue_style( 'warp-css-uikit', plugin_dir_url( __FILE__ ) . 'css/uikit.warp.min.css', array(), $this->version, 'all' );
 
 	}
 

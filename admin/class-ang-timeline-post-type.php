@@ -155,7 +155,7 @@ class Ang_Timeline_Post_Type {
      */
     
     //image size
-    public function register_custom_column($row_label, $id) {
+    public function register_custom_column($row_label) {
         if ($row_label === 'post_thumbnails') :
             print the_post_thumbnail(array(85,85));
         endif;
@@ -277,7 +277,7 @@ class Ang_Timeline_Post_Type {
 
         $fields['timeline'] = array(
             'name' => __( 'Timeline value', 'ang-timeline' ),
-            'description' => __( 'Provide a date, year of a phrase for time tree identification (for example: "22 june, 2011" or "New IT department opened").', 'ang-timeline' ),
+            'description' => __( 'Provide a date, year or a phrase for time tree identification (for example: "22 june, 2011" or "New IT department opened").', 'ang-timeline' ),
             'type' => 'text',
             'default' => '',
             'section' => 'info'

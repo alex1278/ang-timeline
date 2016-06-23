@@ -2,15 +2,16 @@
 Contributors: most_wanted
 Donate link:
 Tags: timeline, custom post type, custom taxonomy, timeline type, images, custom fields
-Stable Tag: 1.0
-Tested up to: 4.5.2
+Stable Tag: 1.3.3
+Tested up to: 4.5.3
 Requires at least: 3.5
 License: GPLv2 or later
 
-A complete timeline plugin for creative folks.
+A complete timeline plugin for creative folks. ANG Timeline creates responsive vertical storyline in chronological, colorful and more attractive order based on the year and date of your posts. 
 
 == Description ==
 
+ANG Timeline is a responsive WordPress Plugin that allows you to create beautiful vertical storyline and a series of events that you can assign to that timeline. 
 This plugin adds the 'timeline' custom post type to your WordPress blog. By default, the plugin will append timeline meta information (timeline value) to the timeline post. 
 It will prepend text element(date) to timeline posts. Timeline widget allows you select any registered image size to show in timeline post.
 
@@ -30,6 +31,21 @@ Working demos are available here:
 * Custom taxonomy;
 * Custom widget.
 * Compatible with all active post types of your theme.
+* Responsive and mobile ready.
+* Smooth scroll animation.
+* [UiKit](http://getuikit.com/docs/documentation_get-started.html) based animation
+* Clean minimalist design.
+* Specify Timeline Title.
+* Set the Timeline post image.
+* Specify the length to trim each story.
+* Hide the read more button for each story.
+* Specify Timeline post featured Image size.
+* Show or hide Timeline title.
+* Show or hide Timelene story date.
+* Specify Story date format.
+* Spesify number of stories to be shown.
+* Specify order type format.
+
 
 == Installation ==
 
@@ -75,15 +91,39 @@ Yes you can! (http://torbara.com/ )
 
 == Changelog ==
 
-= 1.3.0 =
+= 1.3.3  June 23, 2016 =
 
-* OPP structure
+* Fix 'Undefined index' notice in admin panel
 
-= 1.0.0 =
+= 1.3.2  June 22, 2016 =
+
+* Fix admin custom column
+
+= 1.3.1  June 22, 2016 =
+
+* css style fix
+
+= 1.3.0 June 20, 2016 =
+
+* OOP structure
+
+= 1.0.0 September 01, 2015 =
 
 * Initial Release
 
 == Upgrade Notice ==
+
+= 1.3.3 =
+
+* Fix 'Undefined index' notice in admin panel
+
+= 1.3.2 =
+
+* Fix admin custom column
+
+= 1.3.1 =
+
+* css style fix for themes which use UiKit
 
 = 1.3.0 =
 

@@ -81,7 +81,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
                           id="<?php echo esc_attr($this->get_field_id('p_post_type')); ?>" 
                           name="<?php echo esc_attr($this->get_field_name('p_post_type')); ?>" ><?php
                 foreach ($post_types as $post_type){
-                    ?><option value="<?php echo esc_attr($post_type); ?>" <?php if($post_type==$instance['p_post_type']){echo 'selected=""';} ?>><?php echo $post_type; ?></option><?php
+                    ?><option value="<?php echo esc_attr($post_type); ?>" <?php if($post_type==$p_post_type){echo 'selected=""';} ?>><?php echo $post_type; ?></option><?php
                 }
                 ?>
                 </select>
@@ -91,7 +91,8 @@ class ANG_Timeline_Vertical extends WP_Widget {
         
         <!--             Returns  timeline taxonomy -->
         
-        <?php
+        <?php $TaxEvent = isset( $instance[ 'TaxEvent' ] ) ? $instance[ 'TaxEvent' ] : '';
+        
                 $args = array(
                     'type'                     => 'timeline',
                     'child_of'                 => 0,
@@ -117,7 +118,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
                           id="<?php echo esc_attr($this->get_field_id('TaxEvent')); ?>" 
                           name="<?php echo esc_attr($this->get_field_name('TaxEvent')); ?>" ><?php
                 foreach ($tax_events as $tax_event){
-                    ?><option value="<?php echo esc_attr($tax_event->term_id); ?>" <?php if($tax_event->term_id==$instance['TaxEvent']){echo 'selected=""';} ?>><?php echo $tax_event->name; ?></option><?php
+                    ?><option value="<?php echo esc_attr($tax_event->term_id); ?>" <?php if($tax_event->term_id==$TaxEvent){echo 'selected=""';} ?>><?php echo $tax_event->name; ?></option><?php
                 }
                 ?>
                 </select>
@@ -127,6 +128,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
         
         <!--             Returns  post type categories-->
         
+        <?php $CatID = isset( $instance[ 'CatID' ] ) ? $instance[ 'CatID' ] : ''; ?>
         <p>
             <label for="<?php echo $this->get_field_id('CatID'); ?>">
                 <?php _e('Post Category (if post type selected):', 'ang-timeline'); ?>
@@ -153,7 +155,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
                           id="<?php echo esc_attr($this->get_field_id('CatID')); ?>" 
                           name="<?php echo esc_attr($this->get_field_name('CatID')); ?>" ><?php
                 foreach ($cats as $cat){
-                    ?><option value="<?php echo esc_attr($cat->term_id); ?>" <?php if($cat->term_id==$instance['CatID']){echo 'selected=""';} ?>><?php echo $cat->name; ?></option><?php
+                    ?><option value="<?php echo esc_attr($cat->term_id); ?>" <?php if($cat->term_id==$CatID){echo 'selected=""';} ?>><?php echo $cat->name; ?></option><?php
                 }
                 ?>
                 </select>
@@ -162,7 +164,6 @@ class ANG_Timeline_Vertical extends WP_Widget {
         
         
         <!--        Select date and time format -->
-        
         <?php 
 		$date_formats = array(
                         'YEAR' => 'Y',
@@ -185,7 +186,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
             <select id="<?php echo esc_attr($this->get_field_id('p_time_format')); ?>"
                     name="<?php echo esc_attr($this->get_field_name('p_time_format')); ?>">
                 <?php foreach($date_formats as $date_format =>$value){ ?>             
-                <option value="<?php echo $value; ?>" <?php if ($value == $instance[ 'p_time_format' ]){ echo 'selected=""';}?> name="<?php echo esc_attr($this->get_field_name('p_time_format')); ?>" ><?php echo $date_format ; ?></option>
+                <option value="<?php echo $value; ?>" <?php if ($value == $p_time_format){ echo 'selected=""';}?> name="<?php echo esc_attr($this->get_field_name('p_time_format')); ?>" ><?php echo $date_format ; ?></option>
             <?php } ?>
                 
             </select>
@@ -201,7 +202,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
                         id="<?php echo $this->get_field_id('PostsCount'); ?>" 
                         name="<?php echo $this->get_field_name('PostsCount'); ?>" 
                         type="number"
-                        value="<?php echo $instance['PostsCount']; ?>" />
+                        value="<?php echo $PostsCount; ?>" />
             </label>
         </p>
         
@@ -217,7 +218,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
                         name="<?php echo $this->get_field_name('p_number_words'); ?>" 
                         type="number"
                         min="20"
-                        value="<?php echo $instance['p_number_words']; ?>" />
+                        value="<?php echo $p_number_words; ?>" />
             </label>
         </p>
         
@@ -227,12 +228,12 @@ class ANG_Timeline_Vertical extends WP_Widget {
         <p>
             <label for="<?php echo $this->get_field_id('image_size'); ?>"><?php _e('Image Size:', 'ang-timeline'); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id('image_size'); ?>" name="<?php echo $this->get_field_name('image_size'); ?>">
-                <option class="widefat" value="" <?php if('' == $instance['image_size']){echo 'selected="selected"';} ?>><?php _e('-- Default (100 X 100) --', 'ang-timeline'); ?></option>
+                <option class="widefat" value="" <?php if('' == $image_size){echo 'selected="selected"';} ?>><?php _e('-- Default (100 X 100) --', 'ang-timeline'); ?></option>
                 <?php
                     $sizes = Ang_Timeline_Public::ang_get_thumbnail_sizes();
                     foreach ($sizes as $k => $v) {
                             $v = implode(" x ", $v);
-                            echo '<option class="widefat" value="' . $k . '" id="' . $k . '"', $instance['image_size'] == $k ? ' selected="selected"' : '', '>', __($k, 'ang-timeline') . ' (' . __($v, 'ang-timeline') . ' )', '</option>';
+                            echo '<option class="widefat" value="' . $k . '" id="' . $k . '"', $image_size == $k ? ' selected="selected"' : '', '>', __($k, 'ang-timeline') . ' (' . __($v, 'ang-timeline') . ' )', '</option>';
                     }
                 ?>
             </select>
@@ -268,9 +269,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
             
             <select id="<?php echo esc_attr($this->get_field_id('p_order_by')); ?>" name="<?php echo esc_attr($this->get_field_name('p_order_by')); ?>">
                 <?php foreach($p_orders as $p_order =>$value){ ?>
-            
-                                
-                <option value="<?php echo $value; ?>" <?php if ($value == $instance[ 'p_order_by' ]){ echo 'selected=""';}?> name="<?php echo esc_attr($this->get_field_name('p_order_by')); ?>" ><?php echo $p_order ; ?></option>
+                <option value="<?php echo $value; ?>" <?php if ($value == $p_order_by){ echo 'selected=""';}?> name="<?php echo esc_attr($this->get_field_name('p_order_by')); ?>" ><?php echo $p_order ; ?></option>
             <?php } ?>
                 
             </select>
@@ -292,7 +291,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
          
          <?php $p_title = isset( $instance['p_title'] ) ? $instance['p_title'] : false; ?>
         <p>
-            <input type="checkbox" id="<?php echo $this->get_field_id('p_title'); ?>" name="<?php echo $this->get_field_name('p_title'); ?>" <?php if ($instance['p_title']) echo 'checked'; ?> />
+            <input type="checkbox" id="<?php echo $this->get_field_id('p_title'); ?>" name="<?php echo $this->get_field_name('p_title'); ?>" <?php if ($p_title) echo 'checked'; ?> />
             <label for="<?php echo $this->get_field_id('p_title'); ?>"><?php _e('Hide the post title', 'ang-timeline'); ?></label>
         </p>
         
@@ -300,7 +299,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
          
         <?php $p_image = isset( $instance['p_image'] ) ? $instance['p_image'] : false; ?>
         <p>
-            <input type="checkbox" id="<?php echo $this->get_field_id('p_image'); ?>" name="<?php echo $this->get_field_name('p_image'); ?>" <?php if ($instance['p_image']) echo 'checked'; ?> />
+            <input type="checkbox" id="<?php echo $this->get_field_id('p_image'); ?>" name="<?php echo $this->get_field_name('p_image'); ?>" <?php if ($p_image) echo 'checked'; ?> />
             <label for="<?php echo $this->get_field_id('p_image'); ?>"><?php _e('Hide the featured image', 'ang-timeline'); ?></label>
         </p>
         
@@ -308,7 +307,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
          
         <?php $p_link = isset( $instance['p_link'] ) ? $instance['p_link'] : false ; ?>
         <p>
-            <input type="checkbox" id="<?php echo $this->get_field_id('p_link'); ?>" name="<?php echo $this->get_field_name('p_link'); ?>" <?php if ($instance['p_link']) echo 'checked'; ?> />
+            <input type="checkbox" id="<?php echo $this->get_field_id('p_link'); ?>" name="<?php echo $this->get_field_name('p_link'); ?>" <?php if ($p_link) echo 'checked'; ?> />
             <label for="<?php echo $this->get_field_id('p_link'); ?>"><?php _e('Hide the post link', 'ang-timeline'); ?></label>
         </p>
         
@@ -316,7 +315,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
          
         <?php $p_date_hide = isset( $instance['p_date_hide'] ) ? $instance['p_date_hide'] : false ; ?>
         <p>
-            <input type="checkbox" id="<?php echo $this->get_field_id('p_date_hide'); ?>" name="<?php echo $this->get_field_name('p_date_hide'); ?>" <?php if ($instance['p_date_hide']) echo 'checked'; ?> />
+            <input type="checkbox" id="<?php echo $this->get_field_id('p_date_hide'); ?>" name="<?php echo $this->get_field_name('p_date_hide'); ?>" <?php if ($p_date_hide) echo 'checked'; ?> />
             <label for="<?php echo $this->get_field_id('p_date_hide'); ?>"><?php _e('Hide the date', 'ang-timeline'); ?></label>
         </p>
         <?php
