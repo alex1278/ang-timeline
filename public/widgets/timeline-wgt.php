@@ -410,7 +410,7 @@ class ANG_Timeline_Vertical extends WP_Widget {
                     <li class="<?php if($count % 2 == 0) : ?>even<?php else: ?>odd<?php endif; ?>"   data-uk-scrollspy="{cls:'<?php if($count % 2 == 0) : ?>uk-animation-slide-right<?php else: ?>uk-animation-slide-left<?php endif; ?>', repeat: false, delay:<?php if($count % 2 == 0) : ?>600<?php else: ?>400<?php endif; ?>}">
                         <div class="entry-wrapp uk-clearfix">
                             <div class="timeline-year">
-                                <time>  <?php echo get_post_meta($post->ID, '_timeline', true) ?></time>
+                                <time><?php echo (get_post_meta($post->ID, 'timeline', true)) ? get_post_meta($post->ID, 'timeline', true) : get_post_meta($post->ID, '_timeline', true) ?></time>
                             </div>
 
                             <div class="timeline-icon-wrapp" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: false, delay:<?php if($count % 2 == 0) : ?>600<?php else: ?>400<?php endif; ?>}">
