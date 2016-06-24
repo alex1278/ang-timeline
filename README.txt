@@ -2,7 +2,7 @@
 Contributors: most_wanted
 Donate link:
 Tags: timeline, custom post type, custom taxonomy, timeline type, images, custom fields
-Stable Tag: 1.3.3
+Stable Tag: 1.3.4
 Tested up to: 4.5.3
 Requires at least: 3.5
 License: GPLv2 or later
@@ -91,6 +91,10 @@ Yes you can! (http://torbara.com/ )
 
 == Changelog ==
 
+= 1.3.4  June 24, 2016 =
+
+* Added meta field compatibility with first plugin release
+
 = 1.3.3  June 23, 2016 =
 
 * Fix 'Undefined index' notice in admin panel
@@ -112,6 +116,10 @@ Yes you can! (http://torbara.com/ )
 * Initial Release
 
 == Upgrade Notice ==
+
+= 1.3.4 =
+
+* Added meta field compatibility with first plugin release
 
 = 1.3.3 =
 
