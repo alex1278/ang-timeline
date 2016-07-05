@@ -21,6 +21,8 @@ Working demos are available here:
 
 **[LIVE DEMO Endeavor](http://w-endeavor.torbara.com/blog/)**
 
+**[LIVE DEMO BizOrg](http://w-bizorg.torbara.com/)**
+
 ### Github
 
 - [GitHub Repository](https://github.com/alex1278/ang-timeline)
