@@ -11,4 +11,9 @@ Working demos are available here:
 
 **[LIVE DEMO Endeavor](http://w-endeavor.torbara.com/blog/)**
 
-**[LIVE DEMO BizOrg](http://w-bizorg.torbara.com/)**
+**[LIVE DEMO BizOrg](http://w-bizorg.torbara.com/)** 
+
+## Timeline Tabs*
+
+**[LIVE DEMO Renter](http://w-renter.torbara.com/?page_id=7)** ## (ANG Timeline Pro)
+

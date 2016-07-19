@@ -10,8 +10,8 @@
  * Plugin Name:       ANG Timeline
  * Plugin URI:        https://github.com/alex1278/ang-timeline
  * Description:       Timeline tree for WordPress posts and CPT.
- * Tags:              timeline, custom post type, custom taxonomy, timeline type, images, custom fields
- * Version:           1.3.4
+ * Tags:              timeline, custom post type, custom taxonomy, timeline type, images, custom fields timiline tab
+ * Version:           1.3.5
  * Date: 26.11.2015
  * Author:            Aleksandr Glovatskyy
  * Author URI:        http://torbara.com

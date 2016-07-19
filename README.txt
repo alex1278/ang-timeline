@@ -1,8 +1,8 @@
 === ANG Timeline ===
 Contributors: most_wanted
 Donate link:
-Tags: timeline, custom post type, custom taxonomy, timeline type, images, custom fields
-Stable Tag: 1.3.4
+Tags: timeline, custom post type, custom taxonomy, timeline type, images, custom fields timiline tab
+Stable Tag: 1.3.5
 Tested up to: 4.5.3
 Requires at least: 3.5
 License: GPLv2 or later
@@ -21,7 +21,11 @@ Working demos are available here:
 
 **[LIVE DEMO Endeavor](http://w-endeavor.torbara.com/blog/)**
 
-**[LIVE DEMO BizOrg](http://w-bizorg.torbara.com/)**
+**[LIVE DEMO BizOrg](http://w-bizorg.torbara.com/)** 
+
+### Timeline Tabs (ANG Timeline Pro)
+
+**[LIVE DEMO Renter](http://w-renter.torbara.com/?page_id=7)**
 
 ### Github
 
@@ -46,7 +50,11 @@ Working demos are available here:
 * Show or hide Timelene story date.
 * Specify Story date format.
 * Spesify number of stories to be shown.
-* Specify order type format.
+* Specify order type format.s
+* Timeline tabs* (Pro).
+* Timeline tabs shortcode with extended options* (Pro).
+* Specify any post type and any taxonomy which your WordPress theme supports* (Pro).
+* Tabs users shortcode* (Pro).  **[DEMO Renter Agents](http://w-renter.torbara.com/)**
 
 
 == Installation ==
@@ -63,7 +71,7 @@ Working demos are available here:
 
 1. Download 'ANG Timeline'.
 2. Upload the 'ANG Timeline' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
-3. Activate ;ANG Timeline; from your Plugins page. (You'll be greeted with a Welcome page.)
+3. Activate 'ANG Timeline' from your Plugins page. (You'll be greeted with a Welcome page.)
 4. Visit 'Timeline > Add New' and create some posts. (You can always delete these later.)
 5. Go to 'Appearance' > 'Widgets' and find 'ANG Timeline widget'. Now you can display your Timeline posts.
 
@@ -90,8 +98,14 @@ Yes you can! (http://torbara.com/ )
 1. ANG Timeline admin.
 2. ANG Timeline widget.
 3. ANG Timeline page.
+4. ANG Timeline Tabs Shortcode*(Pro).
+5. ANG Users Tabs Shortcode*(Pro).
 
 == Changelog ==
+
+= 1.3.5  Jule 20, 2016 =
+
+* Added new Demo
 
 = 1.3.4  June 24, 2016 =
 
